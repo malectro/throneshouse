@@ -1,2 +1,54 @@
 /* Home SCSS file */
 
+body {
+  background: black;
+}
+
+main {
+  height: 100%;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-family: Helvetica, sans-serif;
+  line-height: 150%;
+  color: white;
+  .house-name {
+    font-weight: bold;
+    color: white;
+  }
+}
+
+$width1: 1600px;
+$width2: 1900px;
+
+.house-box {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: $width1;
+  background-size: $width1;
+  margin-left: -($width1 / 2);
+  background-position: center;
+  &.martell {
+    background: image-url('wallpaper-martell-1900.jpg');
+  }
+  &.baratheon {
+    background: image-url('wallpaper-baratheon-1600.jpg');
+  }
+  &.stark {
+    background: image-url('wallpaper-stark-1600.jpg');
+  }
+  &.lannister {
+    background: image-url('wallpaper-lannister-1600.jpg');
+  }
+  &.greyjoy {
+    background: image-url('wallpaper-greyjoy-1600.jpg');
+  }
+  &.tyrell {
+    background: image-url('wallpaper-tyrell-1900.jpg');
+  }
+  > div {
+    margin-top: 75px;
+  }
+}

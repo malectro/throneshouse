@@ -1,7 +1,9 @@
 <main>
   <% if current_user %>
     <div class="house-box <%= current_user.house_or_assign_house %>">
-      You have sworn fealty to the <%= current_user.house_long_name %>!
+      <div>
+        You have sworn fealty to
+      </div>
     </div>
   <% else %>
     <div class="house-box logged-out">
