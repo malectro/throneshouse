@@ -7,8 +7,7 @@
     </div>
   <% else %>
     <div class="house-box logged-out">
-      <div>Sign in to meet your destiny.</div>
-      <%= link_to "Authorize", "/auth/twitter", class: "auth" %>
+      <div><%= link_to "Pick a House", "/auth/twitter", class: "auth" %></div>
     </div>
   <% end %>
 </main>
