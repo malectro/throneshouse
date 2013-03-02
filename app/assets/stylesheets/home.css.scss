@@ -27,11 +27,11 @@ $width2: 1900px;
   top: 0;
   height: 100%;
   width: $width1;
-  background-size: $width1;
   margin-left: -($width1 / 2);
+  background-size: $width1;
   background-position: center;
   &.martell {
-    background: image-url('wallpaper-martell-1900.jpg');
+    background-image: image-url('wallpaper-martell-1900.jpg');
   }
   &.baratheon {
     background: image-url('wallpaper-baratheon-1600.jpg');
@@ -43,10 +43,10 @@ $width2: 1900px;
     background: image-url('wallpaper-lannister-1600.jpg');
   }
   &.greyjoy {
-    background: image-url('wallpaper-greyjoy-1600.jpg');
+    background-image: image-url('wallpaper-greyjoy-1600.jpg');
   }
   &.tyrell {
-    background: image-url('wallpaper-tyrell-1900.jpg');
+    background-image: image-url('wallpaper-tyrell-1600.jpg');
   }
   > div {
     margin-top: 75px;
