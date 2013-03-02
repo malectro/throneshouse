@@ -1,4 +1,13 @@
 <main>
-  <!-- content -->
+  <% if current_user %>
+    <div class="house-box <%= current_user.house_or_assign_house %>">
+      You have sworn fealty to the <%= current_user.house_long_name %>!
+    </div>
+  <% else %>
+    <div class="house-box logged-out">
+      <div>Sign in to meet your destiny.</div>
+      <%= link_to "Authorize", "/auth/twitter", class: "auth" %>
+    </div>
+  <% end %>
 </main>
 
