@@ -25,7 +25,6 @@ class User
 
   def house_or_assign_house
     house || assign_house
-    :lannister
   end
 
   def house_long_name
