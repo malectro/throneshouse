@@ -16,6 +16,5 @@
 //= require underscore
 //= require backbone
 //= require admin/app
-//= require_dir admin/templates
 //= require_tree .
 
